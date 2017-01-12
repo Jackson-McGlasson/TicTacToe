@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.student.tictactoe.MainActivity">
+
+    <TextView
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:text="X"
+        android:onClick="click1"
+        android:id="@+id/button1"
+        android:textSize="75sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:text="X"
+        android:onClick="click2"
+        android:id="@+id/button2"
+        android:textSize="75sp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/button1"
+        android:layout_toEndOf="@+id/button1"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:text="X"
+        android:onClick="click3"
+        android:id="@+id/button3"
+        android:textSize="75sp"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/button1"
+        android:layout_toStartOf="@+id/button1"
+        android:gravity="center"/>
+
+    <ImageView
+        android:layout_width="5sp"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/button3"
+        android:layout_toEndOf="@+id/button3" />
+
+    <ImageView
+        android:layout_width="5sp"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/button1"
+        android:layout_toEndOf="@+id/button1"
+        android:id="@+id/imageView" />
+
+
+</RelativeLayout>
