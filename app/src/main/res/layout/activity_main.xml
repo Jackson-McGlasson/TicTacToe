@@ -98,18 +98,6 @@
         android:layout_width="100sp"
         android:layout_height="100sp"
         android:text="X"
-        android:onClick="click5"
-        android:id="@+id/button5"
-        android:textSize="75sp"
-        android:gravity="center"
-        android:layout_below="@+id/imageView2"
-        android:layout_toRightOf="@+id/imageView3"
-        android:layout_toEndOf="@+id/imageView3" />
-
-    <TextView
-        android:layout_width="100sp"
-        android:layout_height="100sp"
-        android:text="X"
         android:onClick="click6"
         android:id="@+id/button6"
         android:textSize="75sp"
@@ -140,7 +128,8 @@
         android:gravity="center"
         android:layout_below="@+id/imageView4"
         android:layout_toLeftOf="@+id/button9"
-        android:layout_toStartOf="@+id/button9" />
+        android:layout_toRightOf="@+id/imageView3"
+        android:layout_toEndOf="@+id/imageView3" />
 
     <TextView
         android:layout_width="100sp"
@@ -153,6 +142,18 @@
         android:layout_below="@+id/imageView4"
         android:layout_toRightOf="@+id/imageView"
         android:layout_toEndOf="@+id/imageView" />
+
+    <TextView
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:text="X"
+        android:onClick="click5"
+        android:id="@+id/button5"
+        android:textSize="75sp"
+        android:gravity="center"
+        android:layout_below="@+id/imageView2"
+        android:layout_toRightOf="@+id/imageView3"
+        android:layout_toEndOf="@+id/imageView3" />
 
 
 </RelativeLayout>
