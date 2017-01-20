@@ -20,15 +20,15 @@ public class MainActivity extends AppCompatActivity {
     TextView button8Var;
     TextView button9Var;
     int clickState = 0;
-    int x1 = 0;
-    int x2 = 0;
-    int x3= 0;
-    int x4 = 0;
-    int x5 = 0;
-    int x6 = 0;
-    int x7= 0;
-    int x8 = 0;
-    int x9 = 0;
+    int x1 =-1;
+    int x2 =-2;
+    int x3 =3;
+    int x4 =4;
+    int x5 =5;
+    int x6 =6;
+    int x7 =7;
+    int x8 =8;
+    int x9 =9;
 
 
     @Override
@@ -47,14 +47,56 @@ public class MainActivity extends AppCompatActivity {
     }
     private void check3inarow(){
         if (x1==x2 && x2==x3){
-            CharSequence text = "This text will appear";
+            CharSequence text = "Three in a row!";
             Context context = getApplicationContext();
             int duration = Toast.LENGTH_SHORT;
             Toast myMessage= Toast.makeText(context, text, duration);
             myMessage.show();
         }
-        if (x1==x3 && x3==x7){
-            CharSequence text = "This text will appear";
+        if (x4==x5 && x6==x7){
+            CharSequence text = "Three in a row!";
+            Context context = getApplicationContext();
+            int duration = Toast.LENGTH_SHORT;
+            Toast myMessage= Toast.makeText(context, text, duration);
+            myMessage.show();
+        }
+        if (x7==x8 && x8==x9){
+            CharSequence text = "Three in a row!";
+            Context context = getApplicationContext();
+            int duration = Toast.LENGTH_SHORT;
+            Toast myMessage= Toast.makeText(context, text, duration);
+            myMessage.show();
+        }
+        if (x1==x4 && x4==x7){
+            CharSequence text = "Three in a row!";
+            Context context = getApplicationContext();
+            int duration = Toast.LENGTH_SHORT;
+            Toast myMessage= Toast.makeText(context, text, duration);
+            myMessage.show();
+        }
+        if (x2==x5 && x5==x8){
+            CharSequence text = "Three in a row!";
+            Context context = getApplicationContext();
+            int duration = Toast.LENGTH_SHORT;
+            Toast myMessage= Toast.makeText(context, text, duration);
+            myMessage.show();
+        }
+        if (x3==x6 && x6==x9){
+            CharSequence text = "Three in a row!";
+            Context context = getApplicationContext();
+            int duration = Toast.LENGTH_SHORT;
+            Toast myMessage= Toast.makeText(context, text, duration);
+            myMessage.show();
+        }
+        if (x1==x5 && x5==x9){
+            CharSequence text = "Three in a row!";
+            Context context = getApplicationContext();
+            int duration = Toast.LENGTH_SHORT;
+            Toast myMessage= Toast.makeText(context, text, duration);
+            myMessage.show();
+        }
+        if (x3==x5 && x5==x7){
+            CharSequence text = "Three in a row!";
             Context context = getApplicationContext();
             int duration = Toast.LENGTH_SHORT;
             Toast myMessage= Toast.makeText(context, text, duration);
@@ -64,110 +106,119 @@ public class MainActivity extends AppCompatActivity {
 
 
     public void click1(View view){
-        if(x1 == 0){
+
+        if(x1 == 2){
             button1Var.setText("O");
             x1=1;
 
             check3inarow(); //This calls the checker function
         }
-        else {
+        else{
             button1Var.setText("X");
-            x1=0;
+            x1=2;
+            check3inarow(); //This calls the checker function
         }
     }
 
     public void click2(View view){
-        if(x2 == 0){
+        if(x2 == 2){
             button2Var.setText("O");
             x2=1;
             check3inarow();
         }
         else {
             button2Var.setText("X");
-            x2=0;
+            x2=2;
         }
 
     }
     public void click3(View view){
-        if(x3 == 0){
+        if(x3 == 2){
             button3Var.setText("O");
             x3=1;
             check3inarow();
         }
         else {
             button3Var.setText("X");
-            x3=0;
+            x3=2;
+            check3inarow(); //This calls the checker function
         }
 
     }
     public void click4(View view){
-        if(x4 == 0){
+        if(x4 == 2){
             button4Var.setText("O");
             x4=1;
             check3inarow();
         }
         else {
             button4Var.setText("X");
-            x4=0;
+            x4=2;
+            check3inarow(); //This calls the checker function
         }
 
     }
     public void click5(View view){
-        if(x5 == 0){
+        if(x5 == 2){
             button5Var.setText("O");
             x5=1;
             check3inarow();
         }
         else {
             button5Var.setText("X");
-            x5=0;
+            x5=2;
+            check3inarow(); //This calls the checker function
         }
 
     }
     public void click6(View view){
-        if(x6 == 0){
+        if(x6 == 2){
             button6Var.setText("O");
             x6=1;
             check3inarow();
         }
         else {
             button6Var.setText("X");
-            x6=0;
+            x6=2;
+            check3inarow(); //This calls the checker function
         }
 
     }
     public void click7(View view){
-        if(x7 == 0){
+        if(x7 == 2){
             button7Var.setText("O");
             x7=1;
             check3inarow();
         }
         else {
             button7Var.setText("X");
-            x7=0;
+            x7=2;
+            check3inarow(); //This calls the checker function
         }
 
     }
     public void click8(View view){
-        if(x8 == 0){
+        if(x8 == 2){
             button8Var.setText("O");
             x8=1;
             check3inarow();
         }
         else {
             button8Var.setText("X");
-            x8=0;
+            x8=2;
+            check3inarow(); //This calls the checker function
         }
 
     }
     public void click9(View view){
-        if(x9 == 0){
+        if(x9 == 2){
             button9Var.setText("O");
             x9=1;
         }
-        else {
+        else{
             button9Var.setText("X");
-            x9=0;
+            x9=2;
+            check3inarow(); //This calls the checker function
         }
 
     }
